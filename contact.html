@@ -1,72 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Magdalena's Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" type="text/css" href="./css/styles.css" />
+    <script src="./js/bootstrap.min.js" defer></script>
+    <script src="./js/main.js" defer></script>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Magdalena's Portfolio</title>
-  <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
-    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
-  <link rel="stylesheet" type="text/css" href="./css/styles.css">
-  <script src='./js/bootstrap.min.js' defer></script>
-  <script src='./js/main.js' defer></script>
-</head>
-
-<body>
-  <header>
-    <nav class="navbar navbar-dark navbar-expand-lg fixed-top">
-      <a class="navbar-brand" href="#index.html"><img src="./images/logo.svg" width="200" alt="logo"></a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
-        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav">
-          <a class="nav-link" href="index.html">Home</a>
-          <a class="nav-link" href="portfolio.html">Portfolio</a>
-          <a class="nav-link" href="about.html">About</a>
-          <a class="nav-link active" href="contact.html">Contact</a>
+  <body>
+    <header>
+      <nav class="navbar navbar-dark navbar-expand-lg fixed-top">
+        <a class="navbar-brand" href="#index.html"
+          ><img src="./images/logo.svg" width="200" alt="logo"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link" href="index.html">Home</a>
+            <a class="nav-link" href="portfolio.html">Portfolio</a>
+            <a class="nav-link" href="about.html">About</a>
+            <a class="nav-link active" href="contact.html">Contact</a>
+          </div>
         </div>
-      </div>
-    </nav>
-  </header>
-  <div class="container-fluid p-0">
-    <main>
-      <!-- Contact -->
-      <section>
-        <h1>Get in touch</h1>
-        <div class="card">
-          <form action="script" method="post" id="contactMe" name="contactMe">
-            <div class="form-group">
-              <label for="email">Email address *</label>
-              <input type="email" class="form-control" id="email" name="email" placeholder="name@example.com"
-                required="required">
-            </div>
-            <div class="form-group">
-              <label for="subject">Subject</label>
-              <select class="form-control" id="subject" name="subject">
-                <option>Service</option>
-                <option>Consulting</option>
-              </select>
-            </div>
-            <div class="form-group">
-              <label for="description">Message *</label>
-              <textarea class="form-control" id="description" name="description" rows="3"
-                required="required"></textarea>
-            </div>
-            <br />
-            <button type="submit" form="contactMe" value="Submit" class="btn btn-primary"><i
-                class="fas fa-paper-plane"></i> Submit</button>
-          </form>
-        </div>
-      </section>
-    </main>
+      </nav>
+    </header>
+    <div class="container-fluid p-0">
+      <main>
+        <!-- Contact -->
+        <section>
+          <h1>Get in touch</h1>
+          <div class="card">
+            <form action="script" method="post" id="contactMe" name="contactMe">
+              <div class="form-group">
+                <label for="email">Email address *</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  name="email"
+                  placeholder="name@example.com"
+                  required="required"
+                />
+              </div>
+              <div class="form-group">
+                <label for="subject">Subject</label>
+                <select class="form-control" id="subject" name="subject">
+                  <option>Service</option>
+                  <option>Consulting</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="description">Message *</label>
+                <textarea
+                  class="form-control"
+                  id="description"
+                  name="description"
+                  rows="3"
+                  required="required"
+                ></textarea>
+              </div>
+              <br />
+              <button
+                type="submit"
+                form="contactMe"
+                value="Submit"
+                class="btn btn-primary"
+              >
+                <i class="fas fa-paper-plane"></i> Submit
+              </button>
+            </form>
+          </div>
+        </section>
+      </main>
+    </div>
     <footer>
       <p id="copyright"></p>
     </footer>
-  </div>
-</body>
-
+  </body>
 </html>
