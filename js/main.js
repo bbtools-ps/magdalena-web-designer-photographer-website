@@ -1,9 +1,9 @@
-function addCopyrightYear() {
-  // Get current year
-  const currentYear = new Date().getFullYear();
+(function () {
   // Add copyright to the footer
-  document.getElementById("copyright").innerHTML =
-    "&copy; " + currentYear + " Magdalena Barna";
-}
-
-addCopyrightYear();
+  const addCopyrightYearFooter = () => {
+    document.getElementById(
+      "copyright"
+    ).innerHTML = `&copy; ${new Date().getFullYear()} Magdalena Barna`;
+  };
+  addCopyrightYearFooter();
+})();

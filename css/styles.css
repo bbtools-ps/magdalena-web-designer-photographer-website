@@ -229,7 +229,11 @@ form {
 
 .navbar-nav {
   display: flex;
-  gap: 1rem;
+}
+
+.navbar-nav a:hover {
+  color: #fff !important;
+  background-color: rgba(255, 255, 255, 0.2);
 }
 
 h1,
@@ -340,11 +344,21 @@ h2 {
   }
 }
 
+@media screen and (max-width: 991px) {
+  .navbar-nav {
+    margin-top: 1rem;
+  }
+}
+
+/* ALL OTHER SCREENS */
 @media screen and (min-width: 992px) {
   .projects-container {
     grid-template-columns: repeat(4, 1fr);
   }
   .project-item {
     grid-template-rows: 1fr 1fr 41px;
+  }
+  .navbar-nav {
+    gap: 1rem;
   }
 }
