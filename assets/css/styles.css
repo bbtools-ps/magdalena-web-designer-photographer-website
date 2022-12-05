@@ -105,6 +105,7 @@ footer > * {
   margin: 0;
   padding: 0;
   margin-bottom: 2rem;
+  text-align: center;
 }
 
 .portfolio-filters li {
@@ -112,12 +113,15 @@ footer > * {
 }
 
 .portfolio-filters li a {
-  padding: 1rem;
   color: var(--active-color);
   text-decoration: none;
   border-radius: var(--border-radius);
   font-weight: 700;
   display: block;
+}
+
+.portfolio-filters li a i {
+  margin-right: 0.5rem;
 }
 
 /* PROJECTS CONTAINER */
