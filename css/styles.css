@@ -1,0 +1,350 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;1,400&display=swap");
+
+/* GLOBAL STYLES
+--------------------------------*/
+
+:root {
+  --foreground-color: #fff;
+  --background-color: #161122;
+  --active-color: #a799cc;
+  --body-font: "Montserrat", sans-serif;
+  --border-radius: 0.5rem;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+html,
+body {
+  height: 100%;
+  color: var(--foreground-color);
+}
+
+body * {
+  transition: all 0.2s ease-out;
+}
+
+body {
+  font-family: var(--body-font);
+  margin: 0;
+  overflow-x: hidden;
+  background: linear-gradient(
+        90deg,
+        var(--background-color) 21px,
+        transparent 1%
+      )
+      center,
+    linear-gradient(var(--background-color) 21px, transparent 1%) center,
+    var(--active-color);
+  background-size: 22px 22px;
+}
+
+nav {
+  background-color: rgba(0, 0, 0, 0.4);
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.6);
+  border-bottom: 1px solid #aaa;
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+}
+
+section {
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  max-width: 800px;
+  min-height: 100vh;
+  margin: 0 auto;
+  width: 85%;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  margin-top: -4rem;
+}
+
+footer > * {
+  padding: 0;
+  margin: 0;
+}
+
+.card {
+  background-color: var(--foreground-color);
+  color: var(--background-color);
+  border-radius: var(--border-radius);
+  padding: 1rem;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+/* MAIN MENU
+--------------------------------*/
+
+.main-menu-button {
+  text-decoration: none;
+  padding: 5px 20px;
+}
+
+.btn {
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+/* PORTFOLIO FILTERS */
+
+.portfolio-filters {
+  list-style: none;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 2rem;
+}
+
+.portfolio-filters li {
+  display: block;
+}
+
+.portfolio-filters li a {
+  padding: 1rem;
+  color: var(--active-color);
+  text-decoration: none;
+  border-radius: var(--border-radius);
+  font-weight: 700;
+  display: block;
+}
+
+/* PROJECTS CONTAINER */
+
+.projects-container {
+  display: grid;
+  gap: 1rem;
+}
+
+/* PROJECT ITEM */
+
+.project-item {
+  display: grid;
+}
+
+.project-item img {
+  width: 100%;
+}
+
+.project-item p {
+  font-size: 0.75rem;
+  border-top: 1px solid var(--background-color);
+  line-height: 2.5rem;
+  margin-bottom: -1rem;
+  text-transform: capitalize;
+}
+
+.project-item a {
+  text-decoration: none;
+  color: var(--background-color);
+  width: 100%;
+  display: block;
+}
+
+.project-item h2 {
+  font-size: 1rem;
+}
+
+.project-item h2 a {
+  padding: 0.5rem 0;
+}
+
+.project-item a:hover {
+  color: var(--active-color);
+}
+
+.project-item a:hover > img {
+  opacity: 0.5;
+}
+
+/* PROJECT PAGE */
+
+.project-page {
+  display: grid;
+}
+
+.project-page img {
+  width: 100%;
+}
+
+.project-details {
+  border-top: 1px solid var(--foreground-color);
+  padding-top: 1rem;
+  margin-top: 2rem;
+}
+
+.project-details ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0 0 0 1rem;
+}
+
+/* CONTACT
+--------------------------------*/
+
+form {
+  margin: 1rem;
+}
+
+/* BOOTSTRAP OVERRIDES */
+
+.container-fluid {
+  padding: 0;
+}
+
+.nav-link {
+  border-radius: var(--border-radius);
+  padding: 0.5rem 1rem !important;
+}
+
+.nav-link:hover,
+.btn:hover,
+.active,
+.portfolio-filters li a:hover {
+  background-color: var(--foreground-color);
+  color: var(--background-color) !important;
+}
+
+.navbar {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.navbar a {
+  display: block;
+}
+
+.navbar-nav {
+  display: flex;
+  gap: 1rem;
+}
+
+h1,
+h2 {
+  text-align: center;
+}
+
+h1 {
+  font-weight: 600;
+  line-height: 0.9;
+  text-transform: uppercase;
+  margin-bottom: 3rem;
+}
+
+h1 > span {
+  font-style: italic;
+  display: block;
+  font-size: 1rem;
+  margin: 1rem 1rem 1rem 5px;
+}
+
+h2 {
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.service-title {
+  margin-top: 6rem;
+}
+
+/* RESPONSIVE
+--------------------------------*/
+
+/* Galaxy Fold + iPhone5 */
+
+@media screen and (max-width: 320px) {
+  h1 {
+    margin-top: 5rem;
+  }
+  section {
+    padding: 1rem 1rem 2rem 1rem;
+  }
+  .lighter {
+    flex: 1;
+  }
+  .row {
+    width: 100%;
+  }
+  .portfolio-filters {
+    display: grid;
+  }
+  #contact {
+    align-items: center !important;
+  }
+}
+
+/* iPhone 6, 7, 8, iPhone 6, 7, 8 (Plus), iPhone X */
+
+@media screen and (min-width: 321px) and (max-width: 575px) {
+  section {
+    padding: 3rem 2rem;
+  }
+  h1 {
+    font-size: 2rem;
+    margin-top: 2rem;
+  }
+  .lighter {
+    flex: 1;
+  }
+  #contact {
+    align-items: center !important;
+  }
+  textarea {
+    max-height: 20vh;
+  }
+  .row {
+    width: 100%;
+  }
+  .portfolio-filters {
+    display: grid;
+  }
+}
+
+/* iPad and larger */
+
+@media screen and (min-width: 576px) {
+  section {
+    padding: 6rem 2rem;
+  }
+  h1 {
+    font-size: 5rem;
+  }
+  h2 {
+    font-size: 3rem;
+  }
+  textarea {
+    max-height: 30vh;
+  }
+  .portfolio-filters {
+    display: flex;
+    gap: 1rem;
+  }
+}
+
+@media screen and (min-width: 576px) and (max-width: 991px) {
+  .projects-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .projects-container {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .project-item {
+    grid-template-rows: 1fr 1fr 41px;
+  }
+}
