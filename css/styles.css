@@ -55,7 +55,6 @@ nav {
 }
 
 section {
-  overflow: hidden;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -294,7 +293,7 @@ h2 {
 
 @media screen and (min-width: 321px) and (max-width: 575px) {
   section {
-    padding: 3rem 2rem;
+    padding: 5rem 2rem;
   }
   h1 {
     font-size: 2rem;
