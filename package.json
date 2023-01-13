@@ -1,0 +1,32 @@
+{
+  "name": "magdalena_web_designer_photographer_website",
+  "version": "1.0.0",
+  "description": "Personal website for Magdalena Barna",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "live-server && tsc -- -w",
+    "tsc": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bbtools-ps/magdalena-web-designer-photographer-website.git"
+  },
+  "keywords": [
+    "static",
+    "website",
+    "html",
+    "css",
+    "javascript"
+  ],
+  "author": "Bogdan Bogdanovic",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bbtools-ps/magdalena-web-designer-photographer-website/issues"
+  },
+  "homepage": "https://github.com/bbtools-ps/magdalena-web-designer-photographer-website#readme",
+  "dependencies": {
+    "live-server": "^1.2.2",
+    "typescript": "^4.9.4"
+  }
+}
